@@ -4,6 +4,7 @@
   margin-top: 30px;
   width: 100vw;
 }
+
 .conditions-block {
   margin: 30px 2vw 0 2vw;
   display: grid;
@@ -28,6 +29,10 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1vw;
+}
+
+.accordion {
+  margin: 30px 2vw 0 2vw;
 }
 .expansion-header {
   align-self: center;
@@ -64,22 +69,4 @@
   justify-content: center;
   height: 14vw;
   font: 400 24px/32px Roboto, "Helvetica Neue", sans-serif;
-}
-
-.feedback-form {
-  min-width: 150px;
-  max-width: 500px;
-  width: 100%;
-  button {
-    margin-top: 20px;
-  }
-}
-.feedback-form-block {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 30px;
-}
-.form-field {
-  width: 100%;
 }

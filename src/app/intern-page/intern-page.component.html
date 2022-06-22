@@ -5,7 +5,7 @@
   <hr />
   <div class="conditions-block">
     <mat-card class="condition">
-      <h2>Уникальные условия для новичков</h2>
+      <h2>Уникальные условия для новичков:</h2>
       <mat-list role="list">
         <mat-list-item role="listitem">40% с первой сделки</mat-list-item>
         <mat-list-item role="listitem">Бесплатное обучение</mat-list-item>
@@ -59,63 +59,64 @@
   </div>
 
   <h1 class="title">{{ "Тебя ожидает" | uppercase }}</h1>
-  <mat-accordion>
-    <mat-expansion-panel hideToggle>
-      <mat-expansion-panel-header>
-        <mat-panel-title class="expansion-header">
-          21 час теоретических занятий
-        </mat-panel-title>
-      </mat-expansion-panel-header>
-      <p class="expansion-text">После окончания обучения вы будете знать:</p>
-      <mat-list>
-        <mat-list-item>Основы законодательства</mat-list-item>
-        <mat-list-item>Методы налаживания деловых связей</mat-list-item>
-        <mat-list-item>Технологии работы с клиентами</mat-list-item>
-        <mat-list-item>Продукты компании</mat-list-item>
-        <mat-list-item>Методы презентаций</mat-list-item>
-        <mat-list-item>Психологию продаж</mat-list-item>
-      </mat-list>
-    </mat-expansion-panel>
-    <mat-expansion-panel hideToggle>
-      <mat-expansion-panel-header>
-        <mat-panel-title class="expansion-header">
-          Две недели интенсивной практики с персональным
-          наставником</mat-panel-title
-        ></mat-expansion-panel-header
-      >
-      <p class="expansion-text">
-        Опытные наставники будут сопровождать вас плечом к плечу к вашему успеху
-        и поделятся своими накопленными опытом и знаниями!
-      </p>
-    </mat-expansion-panel>
+  <div class="accordion">
+    <mat-accordion>
+      <mat-expansion-panel hideToggle>
+        <mat-expansion-panel-header>
+          <mat-panel-title class="expansion-header">
+            21 час теоретических занятий
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p class="expansion-text">После окончания обучения вы будете знать:</p>
+        <mat-list>
+          <mat-list-item>Основы законодательства</mat-list-item>
+          <mat-list-item>Методы налаживания деловых связей</mat-list-item>
+          <mat-list-item>Технологии работы с клиентами</mat-list-item>
+          <mat-list-item>Продукты компании</mat-list-item>
+          <mat-list-item>Методы презентаций</mat-list-item>
+          <mat-list-item>Психологию продаж</mat-list-item>
+        </mat-list>
+      </mat-expansion-panel>
+      <mat-expansion-panel hideToggle>
+        <mat-expansion-panel-header>
+          <mat-panel-title class="expansion-header">
+            Две недели интенсивной практики с персональным
+            наставником</mat-panel-title
+          ></mat-expansion-panel-header
+        >
+        <p class="expansion-text">
+          Опытные наставники будут сопровождать вас плечом к плечу к вашему
+          успеху и поделятся своими накопленными опытом и знаниями!
+        </p>
+      </mat-expansion-panel>
 
-    <mat-expansion-panel hideToggle>
-      <mat-expansion-panel-header>
-        <mat-panel-title class="expansion-header"
-          >Активные тренинги в команде</mat-panel-title
-        ></mat-expansion-panel-header
-      >
-      <p class="expansion-text">
-        Тренинги по обработке скриптов и различные семинары помогут быстро
-        влиться в рабочий процесс и выйти на сделку уже в течение первого месяца
-        работы!
-      </p>
-    </mat-expansion-panel>
+      <mat-expansion-panel hideToggle>
+        <mat-expansion-panel-header>
+          <mat-panel-title class="expansion-header"
+            >Активные тренинги в команде</mat-panel-title
+          ></mat-expansion-panel-header
+        >
+        <p class="expansion-text">
+          Тренинги по обработке скриптов и различные семинары помогут быстро
+          влиться в рабочий процесс и выйти на сделку уже в течение первого
+          месяца работы!
+        </p>
+      </mat-expansion-panel>
 
-    <mat-expansion-panel hideToggle>
-      <mat-expansion-panel-header>
-        <mat-panel-title class="expansion-header"
-          >Активные упражнения на скриптах-тренажёрах</mat-panel-title
-        ></mat-expansion-panel-header
-      >
-      <p class="expansion-text">
-        Вы получите неограниченные возможности для совершенствования Ваших
-        навыков и знаний, обучаясь у лучших и решая свои сверхамбициозные
-        задачи!
-      </p>
-    </mat-expansion-panel>
-  </mat-accordion>
-
+      <mat-expansion-panel hideToggle>
+        <mat-expansion-panel-header>
+          <mat-panel-title class="expansion-header"
+            >Активные упражнения на скриптах-тренажёрах</mat-panel-title
+          ></mat-expansion-panel-header
+        >
+        <p class="expansion-text">
+          Вы получите неограниченные возможности для совершенствования Ваших
+          навыков и знаний, обучаясь у лучших и решая свои сверхамбициозные
+          задачи!
+        </p>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </div>
   <div class="limited-offer">
     <h1 class="five-groups-title">
       {{
@@ -130,71 +131,5 @@
       <div class="studying-date">27 августа</div>
     </div>
   </div>
-  <h1 class="title">Записаться на обучение</h1>
-  <div class="feedback-form-block">
-    <form class="feedback-form">
-      <mat-form-field appearance="fill" class="form-field">
-        <mat-label>Ваше имя</mat-label>
-        <input matInput />
-      </mat-form-field>
-      <mat-form-field class="form-field" appearance="fill">
-        <mat-label>Email</mat-label>
-        <input
-          type="email"
-          matInput
-          [formControl]="emailFormControl"
-          [errorStateMatcher]="matcher"
-          placeholder="Например pat@example.com"
-        />
-        <mat-error
-          *ngIf="
-            emailFormControl.hasError('email') &&
-            !emailFormControl.hasError('required')
-          "
-        >
-          Пожалуйста, введите корректный email
-        </mat-error>
-        <mat-error *ngIf="emailFormControl.hasError('required')">
-          Это <strong>обязательное</strong> поле
-        </mat-error>
-      </mat-form-field>
-      <mat-form-field class="form-field" appearance="fill">
-        <mat-label>Номер телефона</mat-label>
-        <span matPrefix>+7 &nbsp;</span>
-        <input type="tel" matInput placeholder="999-999-9999" />
-      </mat-form-field>
-      <mat-form-field appearance="fill" class="form-field">
-        <mat-label>Выберите вакансию</mat-label>
-        <mat-select>
-          <mat-option value="one">Риэлтор-стажёр</mat-option>
-          <mat-option value="two">Риэлтор-эксперт</mat-option>
-          <mat-option value="three">Менеджер</mat-option>
-        </mat-select>
-      </mat-form-field>
-      <mat-form-field appearance="fill" class="form-field">
-        <mat-label>Выберите дату</mat-label>
-        <mat-select [formControl]="dates" multiple>
-          <mat-option *ngFor="let date of dateList" [value]="date">{{
-            date
-          }}</mat-option>
-        </mat-select>
-      </mat-form-field>
-      <mat-form-field appearance="fill" class="form-field">
-        <mat-label>Ваше сообщение</mat-label>
-        <textarea matInput></textarea>
-      </mat-form-field>
-      <mat-checkbox
-        >Я прочитал(а) и соглашаюсь с
-        <a href="">условиями обработки данных</a></mat-checkbox
-      >
-      <button
-        mat-stroked-button
-        type="submit"
-        color="primary"
-        сlass="form-button"
-      >
-        Отправить
-      </button>
-    </form>
-  </div>
+  <app-reg-form></app-reg-form>
 </div>

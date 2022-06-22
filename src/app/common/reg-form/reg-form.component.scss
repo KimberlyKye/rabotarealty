@@ -1,0 +1,17 @@
+.feedback-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+  button {
+    margin-top: 20px;
+  }
+}
+.feedback-form-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.form-field {
+  width: 100%;
+}
