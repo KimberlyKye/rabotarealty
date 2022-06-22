@@ -1,0 +1,59 @@
+.toolbar {
+  width: 100vw;
+}
+
+.toolbar__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 12vh;
+  box-shadow: 0 3px 5px -1px #673ab724, 0 6px 10px #673ab724,
+    0 1px 18px #673ab724;
+}
+
+.company-info {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+
+.logo {
+  height: 8vh;
+}
+
+.title {
+  padding-left: 1rem;
+  font-weight: normal;
+  font-size: 3.5vh;
+  letter-spacing: 10px;
+  line-height: 4.34;
+  text-align: center;
+  min-height: 8vh;
+}
+.title:hover {
+  color: #673ab7;
+}
+
+.toolbar__nav {
+  box-shadow: 0 3px 5px -1px #673ab724, 0 6px 10px #673ab724,
+    0 1px 18px #673ab724;
+}
+.nav-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  a {
+    text-decoration: none;
+    color: #673ab7;
+  }
+  a:hover {
+    color: #6f36b3;
+    text-shadow: #0003 0 0 2px;
+  }
+}
