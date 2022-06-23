@@ -7,7 +7,6 @@ import { InternPageComponent } from './intern-page/intern-page.component';
 import { ExpertPageComponent } from './expert-page/expert-page.component';
 import { ManagerPageComponent } from './manager-page/manager-page.component';
 import { InfoPageComponent } from './info-page/info-page.component';
-import { ContactPageComponent } from './contact-page/contact-page.component';
 import { HeaderModule } from './header/header.module';
 import { FooterModule } from './footer/footer.module';
 import { MainPageComponent } from './main-page/main-page.component';
@@ -27,7 +26,6 @@ import { MatExpansionModule } from '@angular/material/expansion';
     ExpertPageComponent,
     ManagerPageComponent,
     InfoPageComponent,
-    ContactPageComponent,
     MainPageComponent,
   ],
   imports: [

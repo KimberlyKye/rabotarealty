@@ -1,25 +1,6 @@
 import { Component } from '@angular/core';
-import {
-  FormControl,
-  FormGroupDirective,
-  NgForm,
-  Validators,
-} from '@angular/forms';
-import { ErrorStateMatcher } from '@angular/material/core';
-
-export class MyErrorStateMatcher implements ErrorStateMatcher {
-  isErrorState(
-    control: FormControl | null,
-    form: FormGroupDirective | NgForm | null
-  ): boolean {
-    const isSubmitted = form && form.submitted;
-    return !!(
-      control &&
-      control.invalid &&
-      (control.dirty || control.touched || isSubmitted)
-    );
-  }
-}
+import { FormControl, Validators } from '@angular/forms';
+import { MyErrorStateMatcher } from '../error-state-matcher';
 
 @Component({
   selector: 'app-reg-form',
@@ -27,20 +8,24 @@ export class MyErrorStateMatcher implements ErrorStateMatcher {
   styleUrls: ['./reg-form.component.scss'],
 })
 export class RegFormComponent {
+  nameFormControl = new FormControl('', [Validators.required]);
   emailFormControl = new FormControl('', [
     Validators.required,
     Validators.email,
   ]);
-
   matcher = new MyErrorStateMatcher();
+  numberFormControl = new FormControl('', [Validators.required]);
+  vacancyFormControl = new FormControl('', [Validators.required]);
+  dateFormControl = new FormControl('', [Validators.required]);
+  checkFormControl = new FormControl('', [Validators.required]);
+  messageFormControl = new FormControl('');
 
-  dates = new FormControl('');
   dateList: string[] = [
-    '23.06.2022',
-    '01.07.2022',
-    '17.07.2022',
-    '03.08.2022',
+    '29.06.2022',
+    '15.07.2022',
+    '15.08.2022',
     '27.08.2022',
+    '09.09.2022',
     'Другая дата',
   ];
 }

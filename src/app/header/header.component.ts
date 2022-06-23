@@ -11,7 +11,6 @@ export class HeaderComponent implements OnInit {
     { name: 'Риэлтор-эксперт', route: '/vacansii/expert' },
     { name: 'Менеджер группы', route: '/vacansii/manager' },
     { name: 'О нас', route: '/about' },
-    { name: 'Контакты', route: '/contacts' },
   ];
   constructor() {}
 

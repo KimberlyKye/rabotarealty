@@ -49,11 +49,17 @@
   margin: 0;
   padding: 0;
   a {
-    text-decoration: none;
     color: #673ab7;
   }
   a:hover {
     color: #6f36b3;
     text-shadow: #0003 0 0 2px;
   }
+}
+a {
+  text-decoration: none;
+}
+
+.a-button {
+  color: white;
 }
