@@ -1,20 +1,20 @@
 <header>
   <mat-toolbar class="toolbar">
-    <mat-toolbar-row class="toolbar__header">
+    <mat-toolbar-row class="toolbar-row toolbar-row-content">
       <a
         class="company-info"
         href="http://rabotarealty.ru/"
         aria-label="Работа в недвижимости"
       >
         <img src="../../assets/logo.png" alt="logo" class="logo" />
-        <h1 class="header-title">{{ "Работа в недвижимости" | uppercase }}</h1>
+        <h1 class="company-name">{{ "Работа в недвижимости" | uppercase }}</h1>
       </a>
       <button mat-raised-button color="primary">
-        <a href="/zapisatsya" class="a-button">Записаться на собеседование</a>
+        <a href="/zapisatsya" class="reg-button">Записаться на собеседование</a>
       </button>
     </mat-toolbar-row>
-    <mat-toolbar-row class="toolbar__nav">
-      <ul class="nav-list">
+    <mat-toolbar-row class="toolbar-row">
+      <ul class="nav-list toolbar-row-content">
         <li *ngFor="let link of links">
           <a [href]="link.route">{{ link.name }}</a>
         </li>

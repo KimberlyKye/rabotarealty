@@ -1,28 +1,4 @@
-.title {
-  text-align: center;
-  letter-spacing: 5px;
-  margin-top: 30px;
-  width: 100vw;
-}
-
-.conditions-block {
-  margin: 30px 2vw 30px 2vw;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1vw;
-}
-
-.condition {
-  word-wrap: normal;
-  border-radius: 2%;
-  padding: 10px;
-  box-shadow: 0 3px 5px -1px #673ab724, 0 6px 10px #673ab724,
-    0 1px 18px #673ab724;
-}
-
-.condition-paragraph {
-  font-size: 16px;
-}
+@import "../../styles.scss";
 
 .information {
   display: grid;
@@ -40,9 +16,6 @@
 }
 
 .greeting {
-  text-align: center;
-  margin-top: 30px;
-  width: 100vw;
   font: 400 24px/32px Roboto, "Helvetica Neue", sans-serif;
   margin-bottom: 60px;
 }

@@ -2,11 +2,16 @@
   width: 100vw;
 }
 
-.toolbar__header {
+.toolbar-row-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-left: 5vw;
+  padding-right: 5vw;
   height: 12vh;
+}
+
+.toolbar-row {
   box-shadow: 0 3px 5px -1px #673ab724, 0 6px 10px #673ab724,
     0 1px 18px #673ab724;
 }
@@ -22,7 +27,7 @@
   height: 8vh;
 }
 
-.header-title {
+.company-name {
   padding-left: 1rem;
   font-weight: normal;
   font-size: 3.5vh;
@@ -31,23 +36,15 @@
   text-align: center;
   min-height: 8vh;
 }
-.header-title:hover {
+.company-name:hover {
   color: #673ab7;
 }
 
-.toolbar__nav {
-  box-shadow: 0 3px 5px -1px #673ab724, 0 6px 10px #673ab724,
-    0 1px 18px #673ab724;
-}
 .nav-list {
   width: 100%;
-  display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
   list-style: none;
   margin: 0;
-  padding: 0;
   a {
     color: #673ab7;
   }
@@ -56,10 +53,11 @@
     text-shadow: #0003 0 0 2px;
   }
 }
+
 a {
   text-decoration: none;
 }
 
-.a-button {
+.reg-button {
   color: white;
 }

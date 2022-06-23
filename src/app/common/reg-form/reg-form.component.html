@@ -1,10 +1,15 @@
 <h1 class="title">Записаться на cобеседование</h1>
 <div class="feedback-form-block">
-  <form class="feedback-form">
+  <form
+    class="feedback-form"
+    [formGroup]="registrationForm"
+    #formDirective="ngForm"
+    (ngSubmit)="submitForm(formDirective)"
+  >
     <mat-form-field appearance="fill" class="form-field">
       <mat-label>Ваше имя</mat-label>
-      <input matInput [formControl]="nameFormControl" />
-      <mat-error *ngIf="nameFormControl.hasError('required')">
+      <input matInput formControlName="name" />
+      <mat-error *ngIf="registrationForm.controls['name'].hasError('required')">
         Это <strong>обязательное</strong> поле
       </mat-error>
     </mat-form-field>
@@ -13,19 +18,21 @@
       <input
         type="email"
         matInput
-        [formControl]="emailFormControl"
+        formControlName="email"
         [errorStateMatcher]="matcher"
         placeholder="Например pat@example.com"
       />
       <mat-error
         *ngIf="
-          emailFormControl.hasError('email') &&
-          !emailFormControl.hasError('required')
+          registrationForm.controls['email'].hasError('email') &&
+          !registrationForm.controls['email'].hasError('required')
         "
       >
         Пожалуйста, введите корректный email
       </mat-error>
-      <mat-error *ngIf="emailFormControl.hasError('required')">
+      <mat-error
+        *ngIf="registrationForm.controls['email'].hasError('required')"
+      >
         Это <strong>обязательное</strong> поле
       </mat-error>
     </mat-form-field>
@@ -35,35 +42,50 @@
       <input
         type="tel"
         matInput
-        placeholder="999-999-9999"
-        [formControl]="numberFormControl"
+        placeholder="9999999999"
+        formControlName="number"
       />
-      <mat-error *ngIf="numberFormControl.hasError('required')">
+      <mat-error
+        *ngIf="
+          registrationForm.controls['number'].hasError('pattern') &&
+          !registrationForm.controls['number'].hasError('required')
+        "
+      >
+        Пожалуйста, введите корректный номер телефона
+      </mat-error>
+      <mat-error
+        *ngIf="registrationForm.controls['number'].hasError('required')"
+      >
         Это <strong>обязательное</strong> поле
       </mat-error>
     </mat-form-field>
     <mat-form-field appearance="fill" class="form-field">
       <mat-label>Выберите вакансию</mat-label>
-      <mat-select [formControl]="vacancyFormControl">
-        <mat-option value="one">Риэлтор-стажёр</mat-option>
-        <mat-option value="two">Риэлтор-эксперт</mat-option>
-        <mat-option value="three">Менеджер</mat-option>
+      <mat-select formControlName="vacancy">
+        <mat-option value="Риэлтор-стажёр">Риэлтор-стажёр</mat-option>
+        <mat-option value="Риэлтор-эксперт">Риэлтор-эксперт</mat-option>
+        <mat-option value="Менеджер группы">Менеджер группы</mat-option>
       </mat-select>
-      <mat-error *ngIf="vacancyFormControl.hasError('required')">
+      <mat-error
+        *ngIf="registrationForm.controls['vacancy'].hasError('required')"
+      >
         Это <strong>обязательное</strong> поле
       </mat-error>
     </mat-form-field>
     <mat-form-field appearance="fill" class="form-field">
       <mat-label>Выберите дату</mat-label>
-      <mat-select [formControl]="dateFormControl" multiple>
+      <mat-select formControlName="date" multiple>
         <mat-option *ngFor="let date of dateList" [value]="date">{{
           date
         }}</mat-option>
       </mat-select>
+      <mat-error *ngIf="registrationForm.controls['date'].hasError('required')">
+        Это <strong>обязательное</strong> поле
+      </mat-error>
     </mat-form-field>
     <mat-form-field appearance="fill" class="form-field">
       <mat-label>Ваше сообщение</mat-label>
-      <textarea matInput [formControl]="messageFormControl"></textarea>
+      <textarea matInput formControlName="message"></textarea>
     </mat-form-field>
     <p>
       Нажимая кнопку "Отправить", вы принимаете
@@ -74,6 +96,7 @@
       type="submit"
       color="primary"
       сlass="form-button"
+      [disabled]="registrationForm.invalid"
     >
       Отправить
     </button>

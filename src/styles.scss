@@ -13,3 +13,21 @@ body {
   margin-top: 30px;
   width: 100vw;
 }
+.tile {
+  box-shadow: 0 3px 5px -1px #673ab724, 0 6px 10px #673ab724,
+    0 1px 18px #673ab724;
+}
+.conditions-block {
+  margin: 30px 2vw 0 2vw;
+  display: grid;
+  grid-gap: 1vw;
+  grid-template-columns: repeat(3, 1fr);
+}
+.condition {
+  word-wrap: normal;
+  border-radius: 2%;
+  padding: 10px;
+}
+.condition-paragraph {
+  font-size: 16px;
+}
