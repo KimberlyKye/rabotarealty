@@ -1,19 +1,69 @@
 <header>
   <mat-toolbar class="toolbar">
-    <mat-toolbar-row class="toolbar-row toolbar-row-content">
-      <a
-        class="company-info"
-        href="http://rabotarealty.ru/"
-        aria-label="Работа в недвижимости"
-      >
-        <img src="../../assets/logo.png" alt="logo" class="logo" />
-        <h1 class="company-name">{{ "Работа в недвижимости" | uppercase }}</h1>
-      </a>
-      <button mat-raised-button color="primary">
-        <a href="/zapisatsya" class="reg-button">Записаться на собеседование</a>
-      </button>
+    <mat-toolbar-row class="main-header toolbar-row toolbar-row-content">
+      <div class="company-info">
+        <a
+          class="logo"
+          href="http://rabotarealty.ru/"
+          aria-label="Работа в недвижимости"
+        >
+          <img src="../../assets/logo.png" alt="logo" class="" />
+        </a>
+        <div class="text">
+          <div class="text-item">
+            <a
+              href="http://rabotarealty.ru/"
+              aria-label="Работа в недвижимости"
+              class="company-name"
+              >{{ "Работа" | uppercase }}</a
+            >
+          </div>
+          <div class="text-item">
+            <a
+              href="http://rabotarealty.ru/"
+              aria-label="Работа в недвижимости"
+              class="company-name"
+              >{{ "в недвижимости" | uppercase }}</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="header-button">
+        <button mat-raised-button color="primary">
+          <a href="/zapisatsya" class="reg-button"
+            >Записаться на собеседование</a
+          >
+        </button>
+        <div class="menu-button">
+          <button
+            mat-icon-button
+            class="menu-icon"
+            aria-label="Menu button"
+            [matMenuTriggerFor]="menu"
+          >
+            <mat-icon>menu</mat-icon>
+          </button>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item [matMenuTriggerFor]="vacancy">
+              Вакансии
+            </button>
+            <button mat-menu-item>
+              <a [href]="links[3].route">{{ links[3].name }}</a>
+            </button>
+            <button mat-menu-item>
+              <a href="/zapisatsya">Записаться на собеседование</a>
+            </button>
+          </mat-menu>
+
+          <mat-menu #vacancy="matMenu">
+            <button mat-menu-item *ngFor="let link of links | slice: 0:3">
+              <a [href]="link.route">{{ link.name }}</a>
+            </button>
+          </mat-menu>
+        </div>
+      </div>
     </mat-toolbar-row>
-    <mat-toolbar-row class="toolbar-row">
+    <mat-toolbar-row class="nav-header toolbar-row">
       <ul class="nav-list toolbar-row-content">
         <li *ngFor="let link of links">
           <a [href]="link.route">{{ link.name }}</a>
