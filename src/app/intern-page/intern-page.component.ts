@@ -103,14 +103,14 @@ export class InternPageComponent {
       text: [
         'Тренинги по обработке скриптов и различные семинары помогут быстро влиться в рабочий процесс и выйти на сделку уже в течение первого месяца работы!',
       ],
-      img: 'https://coachuniver.ru/wp-content/uploads/2020/10/shutterstock_518683495.jpg',
+      img: 'https://kremenki-gorod.ru/wp-content/uploads/b/8/6/b8655b82cfb003aeb93315dc7578a1ce.jpeg',
     },
     {
       title: 'Активные упражнения на скриптах-тренажёрах',
       text: [
         'Вы получите неограниченные возможности для совершенствования Ваших навыков и знаний, обучаясь у лучших и решая свои сверхамбициозные задачи!',
       ],
-      img: 'https://a.d-cd.net/NyAAAgAOGeA-1920.jpg',
+      img: 'https://coachuniver.ru/wp-content/uploads/2021/03/fotolia124971722subscriptionmonthlyxxlreferencefd92a.jpg',
     },
   ];
 }
