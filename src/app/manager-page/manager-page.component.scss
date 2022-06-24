@@ -1,11 +1,12 @@
 @import "../../styles.scss";
+@import "~swiper/scss";
+@import "~swiper/scss/pagination";
+@import "~swiper/scss/navigation";
 
 .information {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 10vw;
-  margin: 30px 10vw 0px 10vw;
 }
+
 .info {
   height: 5rem;
   display: flex;
@@ -18,4 +19,19 @@
 .greeting {
   font: 400 24px/32px Roboto, "Helvetica Neue", sans-serif;
   margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .information {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10vw;
+    margin: 30px 10vw 0px 10vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .information {
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 30px;
+    margin: 30px 5vw 0px 5vw;
+  }
 }

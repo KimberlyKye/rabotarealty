@@ -12,11 +12,10 @@ import { FooterModule } from './footer/footer.module';
 import { MainPageComponent } from './main-page/main-page.component';
 import { DialogComponent } from './common/dialog/dialog.component';
 import { RegFormModule } from './common/reg-form/reg-form.module';
-import { SidenavComponent } from './common/sidenav/sidenav.component';
+import { ConditionsBlockModule } from './common/conditions-block/conditions-block.module';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
 
-import { MatGridListModule } from '@angular/material/grid-list';
 import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
 import { MatExpansionModule } from '@angular/material/expansion';
@@ -24,7 +23,8 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatCheckboxModule } from '@angular/material/checkbox';
-import {MatMenuModule} from '@angular/material/menu';
+import { MatMenuModule } from '@angular/material/menu';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +34,6 @@ import {MatMenuModule} from '@angular/material/menu';
     InfoPageComponent,
     MainPageComponent,
     DialogComponent,
-    SidenavComponent,
   ],
   imports: [
     BrowserModule,
@@ -42,10 +41,10 @@ import {MatMenuModule} from '@angular/material/menu';
     HeaderModule,
     FooterModule,
     RegFormModule,
+    ConditionsBlockModule,
     NoopAnimationsModule,
     ReactiveFormsModule,
 
-    MatGridListModule,
     MatListModule,
     MatCardModule,
     MatExpansionModule,
@@ -53,7 +52,7 @@ import {MatMenuModule} from '@angular/material/menu';
     MatButtonModule,
     MatSidenavModule,
     MatCheckboxModule,
-    MatMenuModule
+    MatMenuModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
