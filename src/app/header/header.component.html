@@ -1,35 +1,31 @@
 <header>
   <mat-toolbar class="toolbar">
     <mat-toolbar-row class="main-header toolbar-row toolbar-row-content">
-      <div class="company-info">
+      <div>
         <a
-          class="logo"
           href="http://rabotarealty.ru/"
           aria-label="Работа в недвижимости"
+          class="company-info"
         >
-          <img src="../../assets/logo.png" alt="logo" class="" />
+          <img src="../../assets/logo.png" alt="logo" class="logo" />
+
+          <div class="text" tabindex="10">
+            <div class="text-item">
+              <h1 class="company-name">{{ "Работа" | uppercase }}</h1>
+            </div>
+            <div class="text-item">
+              <h1 class="company-name">{{ "в недвижимости" | uppercase }}</h1>
+            </div>
+          </div>
         </a>
-        <div class="text">
-          <div class="text-item">
-            <a
-              href="http://rabotarealty.ru/"
-              aria-label="Работа в недвижимости"
-              class="company-name"
-              >{{ "Работа" | uppercase }}</a
-            >
-          </div>
-          <div class="text-item">
-            <a
-              href="http://rabotarealty.ru/"
-              aria-label="Работа в недвижимости"
-              class="company-name"
-              >{{ "в недвижимости" | uppercase }}</a
-            >
-          </div>
-        </div>
       </div>
       <div class="header-button">
-        <button mat-raised-button color="primary" (click)="openDialog()">
+        <button
+          mat-raised-button
+          color="primary"
+          (click)="openDialog()"
+          class="reg-button"
+        >
           Записаться на собеседование
         </button>
         <div class="menu-button">
