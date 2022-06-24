@@ -6,61 +6,115 @@
   <conditions-block [conditions]="conditions"></conditions-block>
 
   <h1 class="title">{{ "Тебя ожидает" | uppercase }}</h1>
+
+  <div class="four-cards">
+    <mat-card class="expectation tile" tabindex="1234">
+      <div class="expectation-text">
+        <h2 class="expectation-title">{{ expectations[0].title }}</h2>
+
+        <mat-list role="list">
+          <mat-list-item
+            role="listitem"
+            *ngFor="let text of expectations[0].text"
+          >
+            {{ text }}
+          </mat-list-item>
+        </mat-list>
+      </div>
+      <img [src]="expectations[0].img" alt="picture" class="expectation-pic" />
+    </mat-card>
+    <mat-card class="expectation tile" tabindex="1234">
+      <img [src]="expectations[1].img" alt="picture" class="expectation-pic" />
+      <div class="expectation-text">
+        <h2 class="expectation-title">{{ expectations[1].title }}</h2>
+
+        <p *ngFor="let text of expectations[1].text">{{ text }}</p>
+      </div>
+    </mat-card>
+    <mat-card class="expectation tile" tabindex="1234">
+      <div class="expectation-text">
+        <h2 class="expectation-title">{{ expectations[2].title }}</h2>
+
+        <p *ngFor="let text of expectations[2].text">{{ text }}</p>
+      </div>
+      <img [src]="expectations[2].img" alt="picture" class="expectation-pic" />
+    </mat-card>
+    <mat-card class="expectation tile" tabindex="1234">
+      <img [src]="expectations[3].img" alt="picture" class="expectation-pic" />
+
+      <div class="expectation-text">
+        <h2 class="expectation-title">{{ expectations[3].title }}</h2>
+
+        <p *ngFor="let text of expectations[3].text">{{ text }}</p>
+      </div>
+    </mat-card>
+  </div>
   <div class="accordion">
     <mat-accordion>
       <mat-expansion-panel expanded="true">
         <mat-expansion-panel-header>
           <mat-panel-title class="expansion-header">
-            21 час теоретических занятий
+            {{ expectations[0].title }}
           </mat-panel-title>
         </mat-expansion-panel-header>
         <p class="expansion-text">После окончания обучения вы будете знать:</p>
         <mat-list>
-          <mat-list-item>Основы законодательства</mat-list-item>
-          <mat-list-item>Методы налаживания деловых связей</mat-list-item>
-          <mat-list-item>Технологии работы с клиентами</mat-list-item>
-          <mat-list-item>Продукты компании</mat-list-item>
-          <mat-list-item>Методы презентаций</mat-list-item>
-          <mat-list-item>Психологию продаж</mat-list-item>
+          <mat-list-item *ngFor="let text of expectations[0].text">{{
+            text
+          }}</mat-list-item>
         </mat-list>
+        <img
+          [src]="expectations[0].img"
+          alt="picture"
+          class="expectation-pic"
+        />
       </mat-expansion-panel>
       <mat-expansion-panel>
         <mat-expansion-panel-header>
           <mat-panel-title class="expansion-header">
-            Две недели интенсивной практики с персональным
-            наставником</mat-panel-title
+            {{ expectations[1].title }}</mat-panel-title
           ></mat-expansion-panel-header
         >
-        <p class="expansion-text">
-          Опытные наставники будут сопровождать вас плечом к плечу к вашему
-          успеху и поделятся своими накопленными опытом и знаниями!
+        <p class="expansion-text" *ngFor="let text of expectations[1].text">
+          {{ text }}
         </p>
+        <img
+          [src]="expectations[1].img"
+          alt="picture"
+          class="expectation-pic"
+        />
       </mat-expansion-panel>
 
       <mat-expansion-panel>
         <mat-expansion-panel-header>
-          <mat-panel-title class="expansion-header"
-            >Активные тренинги в команде</mat-panel-title
+          <mat-panel-title class="expansion-header">
+            {{ expectations[2].title }}</mat-panel-title
           ></mat-expansion-panel-header
         >
-        <p class="expansion-text">
-          Тренинги по обработке скриптов и различные семинары помогут быстро
-          влиться в рабочий процесс и выйти на сделку уже в течение первого
-          месяца работы!
+        <p class="expansion-text" *ngFor="let text of expectations[2].text">
+          {{ text }}
         </p>
+        <img
+          [src]="expectations[2].img"
+          alt="picture"
+          class="expectation-pic"
+        />
       </mat-expansion-panel>
 
       <mat-expansion-panel>
         <mat-expansion-panel-header>
-          <mat-panel-title class="expansion-header"
-            >Активные упражнения на скриптах-тренажёрах</mat-panel-title
+          <mat-panel-title class="expansion-header">
+            {{ expectations[3].title }}</mat-panel-title
           ></mat-expansion-panel-header
         >
-        <p class="expansion-text">
-          Вы получите неограниченные возможности для совершенствования Ваших
-          навыков и знаний, обучаясь у лучших и решая свои сверхамбициозные
-          задачи!
+        <p class="expansion-text" *ngFor="let text of expectations[3].text">
+          {{ text }}
         </p>
+        <img
+          [src]="expectations[3].img"
+          alt="picture"
+          class="expectation-pic"
+        />
       </mat-expansion-panel>
     </mat-accordion>
   </div>

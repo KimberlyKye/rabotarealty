@@ -12,6 +12,7 @@ const routes: Routes = [
   { path: 'vacansii/expert', component: ExpertPageComponent },
   { path: 'vacansii/manager', component: ManagerPageComponent },
   { path: 'about', component: InfoPageComponent },
+  { path: 'registration', component: RegFormComponent },
   { path: '**', component: MainPageComponent },
 ];
 
