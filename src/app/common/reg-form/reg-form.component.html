@@ -91,14 +91,16 @@
       Нажимая кнопку "Отправить", вы принимаете
       <a href="">условия обработки данных</a>
     </p>
-    <button
-      mat-stroked-button
-      type="submit"
-      color="primary"
-      сlass="form-button"
-      [disabled]="registrationForm.invalid"
-    >
-      Отправить
-    </button>
+    <div class="buttons">
+      <button
+        mat-stroked-button
+        type="submit"
+        color="primary"
+        сlass="form-button "
+        [disabled]="registrationForm.invalid"
+      >
+        Отправить
+      </button>
+    </div>
   </form>
 </div>

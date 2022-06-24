@@ -11,10 +11,24 @@ body {
   text-align: center;
   letter-spacing: 5px;
   margin-top: 30px;
-  width: 100vw;
+  width: 100%;
+}
+.danger-title {
+  color: #d52323;
+  text-transform: uppercase;
 }
 
 .tile {
   box-shadow: 0 3px 5px -1px #673ab724, 0 6px 10px #673ab724,
     0 1px 18px #673ab724;
+}
+.danger-tile {
+  box-shadow: 0 3px 5px -1px #d5232324, 0 6px 10px #d5232324,
+    0 1px 18px #d5232324;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

@@ -15,11 +15,10 @@
 }
 .limited-offer {
   margin: 30px 5vw 0 5vw;
+  color: red;
 }
 .five-groups-title {
-  word-wrap: normal;
-  padding: 10px;
-  text-align: center;
+  font-weight: 900;
 }
 .five-groups-block {
   display: grid;
@@ -28,7 +27,7 @@
 }
 .studying-date {
   word-wrap: normal;
-  border-radius: 2%;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;

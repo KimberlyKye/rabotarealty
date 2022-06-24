@@ -11,7 +11,6 @@ const routes: Routes = [
   { path: 'vacansii/intern', component: InternPageComponent },
   { path: 'vacansii/expert', component: ExpertPageComponent },
   { path: 'vacansii/manager', component: ManagerPageComponent },
-  { path: 'zapisatsya', component: RegFormComponent },
   { path: 'about', component: InfoPageComponent },
   { path: '**', component: MainPageComponent },
 ];

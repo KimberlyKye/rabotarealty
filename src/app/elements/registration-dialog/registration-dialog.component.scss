@@ -1,0 +1,12 @@
+@import "../../../styles.scss";
+* {
+  max-width: 700px;
+}
+.title {
+  display: none;
+}
+.dialog-header {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}

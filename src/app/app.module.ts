@@ -10,7 +10,7 @@ import { InfoPageComponent } from './info-page/info-page.component';
 import { HeaderModule } from './header/header.module';
 import { FooterModule } from './footer/footer.module';
 import { MainPageComponent } from './main-page/main-page.component';
-import { DialogComponent } from './common/dialog/dialog.component';
+import { DialogComponent } from './elements/dialog/dialog.component';
 import { RegFormModule } from './common/reg-form/reg-form.module';
 import { ConditionsBlockModule } from './common/conditions-block/conditions-block.module';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';

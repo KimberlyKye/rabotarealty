@@ -8,7 +8,7 @@ import {
 import { MyErrorStateMatcher } from '../error-state-matcher';
 import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
 import { MatDialog } from '@angular/material/dialog';
-import { DialogComponent } from '../dialog/dialog.component';
+import { DialogComponent } from '../../elements/dialog/dialog.component';
 
 @Component({
   selector: 'app-reg-form',
