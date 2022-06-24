@@ -1,5 +1,9 @@
 <div class="conditions-block">
-  <mat-card class="condition tile" *ngFor="let condition of conditions">
+  <mat-card
+    class="condition tile"
+    tabindex="1234"
+    *ngFor="let condition of conditions"
+  >
     <h2>{{ condition.title }}</h2>
     <mat-list role="list">
       <mat-list-item

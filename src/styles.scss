@@ -18,7 +18,7 @@ body {
   text-transform: uppercase;
 }
 
-.tile {
+.tile:hover {
   box-shadow: 0 3px 5px -1px #673ab724, 0 6px 10px #673ab724,
     0 1px 18px #673ab724;
 }
