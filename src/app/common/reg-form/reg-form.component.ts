@@ -52,7 +52,7 @@ export class RegFormComponent {
   private sendEmail() {
     emailjs
       .send(
-        'service_8jitqw6',
+        'service_5ixiurq',
         'template_2d6ilet',
         this.registrationForm.value,
         '36V6kFd_Htz44F-9A'
