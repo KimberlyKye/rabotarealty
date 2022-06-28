@@ -38,6 +38,10 @@
   width: 100%;
   padding: 0;
 }
+
+.expectation-list {
+  list-style: url("../../assets/knowledge.png");
+}
 @media screen and (min-width: 768px) {
   .accordion {
     display: none;

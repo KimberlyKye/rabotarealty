@@ -5,14 +5,11 @@
     *ngFor="let condition of conditions"
   >
     <h2>{{ condition.title }}</h2>
-    <mat-list role="list">
-      <mat-list-item
-        role="listitem"
-        *ngFor="let item of condition.items"
-        class="listitem"
-        >{{ item }}</mat-list-item
-      >
-    </mat-list>
+    <ul class="list">
+      <li *ngFor="let item of condition.items" class="listitem">
+        {{ item }}
+      </li>
+    </ul>
   </mat-card>
 </div>
 
@@ -28,14 +25,11 @@
   <ng-template swiperSlide *ngFor="let condition of conditions">
     <mat-card class="condition tile">
       <h2>{{ condition.title }}</h2>
-      <mat-list role="list">
-        <mat-list-item
-          role="listitem"
-          *ngFor="let item of condition.items"
-          class="listitem"
-          >{{ item }}</mat-list-item
-        >
-      </mat-list>
+      <ul class="list">
+        <li *ngFor="let item of condition.items" class="listitem">
+          {{ item }}
+        </li>
+      </ul>
     </mat-card></ng-template
   >
 </swiper>

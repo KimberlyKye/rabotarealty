@@ -12,14 +12,11 @@
       <div class="expectation-text">
         <h2 class="expectation-title">{{ expectations[0].title }}</h2>
 
-        <mat-list role="list">
-          <mat-list-item
-            role="listitem"
-            *ngFor="let text of expectations[0].text"
-          >
+        <ul class="expectation-list">
+          <li class="listitem" *ngFor="let text of expectations[0].text">
             {{ text }}
-          </mat-list-item>
-        </mat-list>
+          </li>
+        </ul>
       </div>
       <img [src]="expectations[0].img" alt="picture" class="expectation-pic" />
     </mat-card>
@@ -58,11 +55,9 @@
           </mat-panel-title>
         </mat-expansion-panel-header>
         <p class="expansion-text">После окончания обучения вы будете знать:</p>
-        <mat-list>
-          <mat-list-item *ngFor="let text of expectations[0].text">{{
-            text
-          }}</mat-list-item>
-        </mat-list>
+        <ul class="expectation-list">
+          <li *ngFor="let text of expectations[0].text">{{ text }}</li>
+        </ul>
         <img
           [src]="expectations[0].img"
           alt="picture"

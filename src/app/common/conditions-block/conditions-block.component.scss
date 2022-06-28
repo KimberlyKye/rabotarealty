@@ -1,18 +1,21 @@
-@import '../../../styles.scss';
-@import '~swiper/scss';
-@import '~swiper/scss/pagination';
-@import '~swiper/scss/navigation';
+@import "../../../styles.scss";
+@import "~swiper/scss";
+@import "~swiper/scss/pagination";
+@import "~swiper/scss/navigation";
 
 .condition {
   word-wrap: normal;
   border-radius: 2%;
   padding: 10px;
   height: fit-content;
+  font-size: 16px;
 }
-
+.list {
+  list-style: url("../../../assets/crown.png");
+}
 .listitem {
   height: fit-content;
-  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 @media screen and (min-width: 768px) {
