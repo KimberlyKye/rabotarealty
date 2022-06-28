@@ -3,6 +3,14 @@
 @import "~swiper/scss/pagination";
 @import "~swiper/scss/navigation";
 
+.parallax-image {
+  background: url("../../assets/intern-bg.jpg");
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .expansion-header {
   align-self: center;
   font-size: 16px;

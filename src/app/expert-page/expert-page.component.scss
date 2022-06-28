@@ -1,1 +1,9 @@
 @import "../../styles.scss";
+
+.parallax-image {
+  background: url("../../assets/expert-bg.png");
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

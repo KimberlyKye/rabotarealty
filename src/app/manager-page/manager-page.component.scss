@@ -3,6 +3,14 @@
 @import "~swiper/scss/pagination";
 @import "~swiper/scss/navigation";
 
+.parallax-image {
+  background: url("../../assets/manager-bg.jpeg");
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .information {
   display: grid;
 }

@@ -1,8 +1,12 @@
 <div class="expert-page">
-  <h1 class="title">
-    {{ "Открой для себя новые горизонты!" | uppercase }}
-  </h1>
-  <hr />
+  <div class="parallax-image">
+    <div class="black-bg">
+      <p class="scroll-text title">
+        {{ "Открой для себя новые горизонты! " | uppercase }}
+      </p>
+    </div>
+  </div>
+
   <conditions-block [conditions]="conditions"></conditions-block>
   <app-reg-form></app-reg-form>
 </div>
