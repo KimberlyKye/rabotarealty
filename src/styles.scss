@@ -47,11 +47,7 @@ a {
   justify-content: center;
 }
 
-.parallax-image {
-  min-height: 300px;
-}
 .black-bg {
-  min-height: 300px;
   background: rgba(0, 0, 0, 0.356);
   display: flex;
   align-items: center;
@@ -59,7 +55,6 @@ a {
 }
 .scroll-text {
   color: #fff;
-  font: 400 74px/74px Roboto, "Helvetica Neue", sans-serif;
 }
 
 @media screen and (min-width: 980px) {
@@ -67,11 +62,32 @@ a {
     padding-left: 5vw;
     padding-right: 5vw;
   }
+  .scroll-text {
+    font: 400 8.33vh/8.33vh Roboto, "Helvetica Neue", sans-serif;
+  }
 }
 @media screen and (min-width: 768px) {
   .toolbar-row {
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 979px) {
+  .parallax-image,
+  .black-bg {
+    min-height: 20vh;
+  }
+  .scroll-text {
+    font: 400 5vh/5vh Roboto, "Helvetica Neue", sans-serif;
+  }
+}
+@media screen and (max-width: 767px) {
+  .parallax-image,
+  .black-bg {
+    min-height: 15vh;
+  }
+  .scroll-text {
+    font: 400 20px/32px Roboto, "Helvetica Neue", sans-serif;
   }
 }
