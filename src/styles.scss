@@ -7,6 +7,19 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
+.toolbar {
+  width: 100vw;
+}
+
+.toolbar-row {
+  box-shadow: 0 3px 5px -1px #673ab724, 0 6px 10px #673ab724,
+    0 1px 18px #673ab724;
+}
+
+a {
+  text-decoration: none;
+}
+
 .title {
   text-align: center;
   letter-spacing: 5px;
@@ -31,4 +44,19 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (min-width: 980px) {
+  .toolbar-row-content {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .toolbar-row-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }

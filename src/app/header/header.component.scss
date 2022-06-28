@@ -1,15 +1,5 @@
-.toolbar {
-  width: 100vw;
-}
+@import "../../styles.scss";
 
-.toolbar-row {
-  box-shadow: 0 3px 5px -1px #673ab724, 0 6px 10px #673ab724,
-    0 1px 18px #673ab724;
-}
-
-a {
-  text-decoration: none;
-}
 .company-name {
   color: black;
   line-height: 4.34;
@@ -24,10 +14,6 @@ a {
 }
 
 @media screen and (min-width: 980px) {
-  .toolbar-row-content {
-    padding-left: 5vw;
-    padding-right: 5vw;
-  }
   .text {
     display: flex;
   }
@@ -43,21 +29,12 @@ a {
   .main-header {
     height: 12vh;
   }
-  .nav-header {
-    height: 7.2vh;
-  }
   .company-info {
     display: flex;
     align-items: center;
     text-decoration: none;
     flex-wrap: wrap;
     color: black;
-  }
-
-  .toolbar-row-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
   }
 
   .logo {
@@ -75,19 +52,6 @@ a {
     color: #673ab7;
   }
 
-  .nav-list {
-    width: 100%;
-    flex-wrap: wrap;
-    list-style: none;
-    margin: 0;
-    a {
-      color: #673ab7;
-    }
-    a:hover {
-      color: #6f36b3;
-      text-shadow: #0003 0 0 2px;
-    }
-  }
   .menu-button {
     display: none;
   }
@@ -116,9 +80,6 @@ a {
     align-items: center;
     justify-content: space-between;
     height: 85px;
-  }
-  .nav-header {
-    display: none;
   }
 
   .logo {

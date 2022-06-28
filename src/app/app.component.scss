@@ -1,0 +1,35 @@
+@import "../styles.scss";
+
+@media screen and (min-width: 768px) {
+  .toolbar-row-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-header {
+    height: 7.2vh;
+  }
+  .nav-list {
+    width: 100%;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    a {
+      color: #673ab7;
+    }
+    a:hover {
+      color: #6f36b3;
+      text-shadow: #0003 0 0 2px;
+    }
+    .nav-link.active {
+      background-color: #673ab74d;
+      padding: 1.89vh;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav-header {
+    display: none;
+  }
+}

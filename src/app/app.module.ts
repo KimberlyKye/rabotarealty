@@ -24,6 +24,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatMenuModule } from '@angular/material/menu';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { TimerComponent } from './elements/timer/timer.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +36,7 @@ import { MatMenuModule } from '@angular/material/menu';
     InfoPageComponent,
     MainPageComponent,
     DialogComponent,
+    TimerComponent,
   ],
   imports: [
     BrowserModule,
@@ -45,6 +48,7 @@ import { MatMenuModule } from '@angular/material/menu';
     NoopAnimationsModule,
     ReactiveFormsModule,
 
+    MatToolbarModule,
     MatListModule,
     MatCardModule,
     MatExpansionModule,
