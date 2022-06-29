@@ -9,19 +9,23 @@
 </header>
 
 <div class="main-text">
-  <p class="title">
-    {{
-      "Сегодня мы приглашаем в свою команду и риэлторов с опытом и тех, кто не имеет опыта работы в недвижимости, но очень хочет самореализоваться в этой сфере"
-        | uppercase
-    }}
-  </p>
-  <p>
-    {{
-      "Новичков-риэлторов принимаем на самых выгодных условиях в городе!"
-        | uppercase
-    }}
-  </p>
+  <div>
+    <h1 class="bold">
+      {{
+        "Мы приглашаем в свою команду и риэлторов с опытом и тех, кто не имеет опыта работы в недвижимости, но очень хочет самореализоваться в этой сфере"
+          | uppercase
+      }}
+    </h1>
+    <h2>
+      {{
+        "Новичков-риэлторов принимаем на самых выгодных условиях в городе!"
+          | uppercase
+      }}
+    </h2>
+  </div>
+  <div></div>
 </div>
+
 <div class="intro-into-realty">
   <div class="image-container">
     <img src="../../assets/main-text-img.png" alt="" />
@@ -43,6 +47,7 @@
   </div>
 </div>
 
+<h1 class="vacancies-header title">Наши вакансии:</h1>
 <div class="vacancies-block">
   <mat-card class="main-vacancy-block tile" tabindex="1234">
     <img
@@ -56,7 +61,9 @@
       color="primary"
       aria-label="Example icon button with a menu icon"
     >
-      <mat-icon>arrow_forward</mat-icon>
+      <a href="/vacansii/intern">
+        <mat-icon>arrow_forward</mat-icon>
+      </a>
     </button>
   </mat-card>
   <mat-card class="main-vacancy-block tile" tabindex="1234">
@@ -71,7 +78,9 @@
       color="primary"
       aria-label="Example icon button with a menu icon"
     >
-      <mat-icon>arrow_forward</mat-icon>
+      <a href="/vacansii/expert">
+        <mat-icon>arrow_forward</mat-icon>
+      </a>
     </button>
   </mat-card>
   <mat-card class="main-vacancy-block tile" tabindex="1234">
@@ -86,7 +95,9 @@
       color="primary"
       aria-label="Example icon button with a menu icon"
     >
-      <mat-icon>arrow_forward</mat-icon>
+      <a href="/vacansii/manager">
+        <mat-icon>arrow_forward</mat-icon>
+      </a>
     </button>
   </mat-card>
 </div>
