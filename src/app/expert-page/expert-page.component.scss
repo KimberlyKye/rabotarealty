@@ -14,7 +14,13 @@
 
 .director-quote {
   background: #cccccc24;
-  text-align: justify;
+  & > .text-container {
+    text-align: justify;
+  }
+  & > .img-container {
+    padding: 10px;
+    text-align: center;
+  }
 }
 .hugs-image {
   width: 100%;
