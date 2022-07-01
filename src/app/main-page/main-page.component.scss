@@ -27,13 +27,15 @@
 }
 
 .image-container,
-.text-container {
+.text-container,
+.video {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.image-container > img {
+.image-container > img,
+.video > video {
   width: 100%;
 }
 .text-container {
@@ -160,8 +162,14 @@
 
 @media screen and (min-width: 768px) {
   .intro-into-realty {
-    display: grid;
     grid-template-columns: 2fr 1fr;
+  }
+  .video-block {
+    grid-template-columns: 1fr 2fr;
+  }
+  .intro-into-realty,
+  .video-block {
+    display: grid;
     margin: 30px 100px 30px 100px;
     grid-gap: 20px;
   }
@@ -175,7 +183,8 @@
     background-position: bottom;
     background-size: cover;
   }
-  .intro-into-realty {
+  .intro-into-realty,
+  .video-block {
     display: flex;
     align-items: center;
     flex-direction: column;
