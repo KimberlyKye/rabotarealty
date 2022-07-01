@@ -66,7 +66,6 @@ a {
 
 .limited-offer {
   margin: 30px 5vw 0 5vw;
-  color: red;
 }
 .five-groups-title {
   font-weight: 900;
@@ -84,6 +83,9 @@ a {
   justify-content: center;
   height: 14vw;
   text-align: center;
+  border-color: #00000024;
+  box-shadow: 0 3px 5px -1px #673ab724, 0 6px 10px #673ab724,
+    0 1px 18px #673ab724;
 }
 
 .expansion-header {
@@ -100,7 +102,7 @@ a {
     padding-left: 5vw;
     padding-right: 5vw;
   }
-  .scroll-text {
+  .header-page-text {
     font: 400 8.33vh/8.33vh Roboto, "Helvetica Neue", sans-serif;
   }
 }
@@ -134,7 +136,7 @@ a {
   .parallax-image {
     display: none;
   }
-  .scroll-text {
+  .header-page-text {
     font: 400 20px/32px Roboto, "Helvetica Neue", sans-serif;
   }
   .five-groups-block {
