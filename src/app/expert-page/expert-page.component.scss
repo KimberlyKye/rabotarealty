@@ -1,9 +1,60 @@
 @import "../../styles.scss";
 
 .parallax-image {
-  background: url("../../assets/expert-bg.png");
+  background: url("../../assets/expert-bg-.jpeg");
   background-attachment: fixed;
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.expert-block {
+  display: grid;
+}
+.director-quote {
+  background: #cccccc24;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .expert-block {
+    grid-template-columns: 1fr 1fr;
+    margin: 30px 2vw 30px 2vw;
+  }
+  .greeting {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+
+    .text-container,
+    .img-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      max-width: 60vw;
+      margin-bottom: 30px;
+    }
+    .text-container > p {
+      font: 400 2.5vh/2.5vh Roboto, "Helvetica Neue", sans-serif;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .expert-block {
+    grid-template-rows: 1fr 1fr;
+  }
+  .greeting {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    p {
+      min-width: 150px;
+      max-width: 500px;
+      width: 100%;
+    }
+  }
 }
