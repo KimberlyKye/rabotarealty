@@ -1,9 +1,16 @@
 <header class="main-page-header">
   <div class="parallax-image">
     <div class="black-bg">
-      <p class="scroll-text title">
+      <p class=".header-page-text title">
         {{ "Работа с недвижимостью - это здорово! " | uppercase }}
       </p>
+    </div>
+  </div>
+  <div class="page-title">
+    <div class="black-bg">
+      <h1 class="header-page-text title">
+        {{ "Работа с недвижимостью - это здорово! " | uppercase }}
+      </h1>
     </div>
   </div>
 </header>
@@ -48,62 +55,9 @@
 </div>
 
 <h1 class="vacancies-header title">Наши вакансии:</h1>
-<div class="vacancies-block">
-  <mat-card class="main-vacancy-block tile" tabindex="1234">
-    <img
-      src="../../assets/Stuck at Home - Sitting On Chair.png"
-      alt="Риэлтор-стажёр"
-      class="vacancy-pic"
-    />
-    <div>Риэлтор-стажёр</div>
-    <button
-      mat-mini-fab
-      color="primary"
-      aria-label="Example icon button with a menu icon"
-    >
-      <a href="/vacansii/intern">
-        <mat-icon>arrow_forward</mat-icon>
-      </a>
-    </button>
-  </mat-card>
-  <mat-card class="main-vacancy-block tile" tabindex="1234">
-    <img
-      src="../../assets/Stuck at Home - Sitting On Floor.png"
-      alt="Риэлтор-эксперт"
-      class="vacancy-pic"
-    />
-    <div>Риэлтор-эксперт</div>
-    <button
-      mat-mini-fab
-      color="primary"
-      aria-label="Example icon button with a menu icon"
-    >
-      <a href="/vacansii/expert">
-        <mat-icon>arrow_forward</mat-icon>
-      </a>
-    </button>
-  </mat-card>
-  <mat-card class="main-vacancy-block tile" tabindex="1234">
-    <img
-      src="../../assets/Stuck at Home - Standing.png"
-      alt="Менеджер группы"
-      class="vacancy-pic"
-    />
-    <div>Менеджер группы</div>
-    <button
-      mat-mini-fab
-      color="primary"
-      aria-label="Example icon button with a menu icon"
-    >
-      <a href="/vacansii/manager">
-        <mat-icon>arrow_forward</mat-icon>
-      </a>
-    </button>
-  </mat-card>
-</div>
 
 <div class="cards">
-  <div class="card main-vacancy-block">
+  <div class="card">
     <div class="card__side card__side--front card__side--front-1">
       <div class="card__description">
         <img
@@ -111,25 +65,28 @@
           alt="Риэлтор-стажёр"
           class="vacancy-pic"
         />
+        <h3>Риэлтор-стажёр</h3>
       </div>
     </div>
     <div class="card__side card__side--back card__side--back-1">
       <div class="card__description">
         <h3>Риэлтор-стажёр</h3>
-        <button
-          mat-mini-fab
-          color="primary"
-          aria-label="Example icon button with a menu icon"
-        >
-          <a href="/vacansii/intern">
-            <mat-icon>arrow_forward</mat-icon>
-          </a>
-        </button>
+        <p>
+          Подойдет вам, если вы активный, общительный, позитивный человек и не
+          имеете опыта работы в недвижимости!
+        </p>
+        <p>
+          Мы готовы делиться всем нашим опытом и знаниями, наработанными более,
+          чем за 20 лет!
+        </p>
+        <a href="/vacansii/intern" class="explore-vacancy-link">
+          Узнать подробнее <mat-icon>arrow_forward</mat-icon>
+        </a>
       </div>
     </div>
   </div>
 
-  <div class="card main-vacancy-block">
+  <div class="card">
     <div class="card__side card__side--front card__side--front-2">
       <div class="card__description">
         <img
@@ -137,25 +94,28 @@
           alt="Риэлтор-эксперт"
           class="vacancy-pic"
         />
+        <h3>Риэлтор-эксперт</h3>
       </div>
     </div>
     <div class="card__side card__side--back card__side--back-2">
       <div class="card__description">
         <h3>Риэлтор-эксперт</h3>
-        <button
-          mat-mini-fab
-          color="primary"
-          aria-label="Example icon button with a menu icon"
-        >
-          <a href="/vacansii/expert">
-            <mat-icon>arrow_forward</mat-icon>
-          </a>
-        </button>
+        <p>
+          Подойдет вам, если вы уже имеете опыт работы в недвижимости и хотите
+          обрести коллектив единомышленников!
+        </p>
+        <p>
+          Мы понимаем, какой объем работы совершает агент полного цикла, мы
+          уважаем его труд и готовы оплачивать его достойно!
+        </p>
+        <a href="/vacansii/expert" class="explore-vacancy-link">
+          Узнать подробнее <mat-icon>arrow_forward</mat-icon>
+        </a>
       </div>
     </div>
   </div>
 
-  <div class="card main-vacancy-block">
+  <div class="card">
     <div class="card__side card__side--front card__side--front-3">
       <div class="card__description">
         <img
@@ -163,31 +123,37 @@
           alt="Менеджер группы"
           class="vacancy-pic"
         />
+        <h3>Менеджер группы</h3>
       </div>
     </div>
     <div class="card__side card__side--back card__side--back-3">
       <div class="card__description">
         <h3>Менеджер группы</h3>
-        <button
-          mat-mini-fab
-          color="primary"
-          aria-label="Example icon button with a menu icon"
-        >
-          <a href="/vacansii/manager">
-            <mat-icon>arrow_forward</mat-icon>
-          </a>
-        </button>
+        <p>
+          Подойдет вам, если у вас уже есть опыт работы в недвижимости и вы
+          чувствуете, что можете больше и жаждете карьерного роста!
+        </p>
+        <p>
+          У нас вы приобретёте команду, которая всегда готова прийти на выручку
+        </p>
+        <a href="/vacansii/manager" class="explore-vacancy-link">
+          Узнать подробнее <mat-icon>arrow_forward</mat-icon>
+        </a>
       </div>
     </div>
   </div>
 </div>
 
-<div class="accordion">
-  <mat-accordion>
-    <mat-expansion-panel expanded="true" *ngFor="let text of aboutUsText">
-      <mat-expansion-panel-header>
+<h1 class="title">{{ "Почему мы:" | uppercase }}</h1>
+<div class="accordion-block">
+  <mat-accordion color="primary" class="accordion">
+    <mat-expansion-panel
+      *ngFor="let text of aboutUsText"
+      [expanded]="text.isExpanded"
+    >
+      <mat-expansion-panel-header class="expansion-panel-header">
         <mat-panel-title class="expansion-header">
-          {{ text.title }}
+          {{ text.title | uppercase }}
         </mat-panel-title>
       </mat-expansion-panel-header>
       <p class="expansion-text" *ngFor="let paragraph of text.text">
@@ -196,3 +162,20 @@
     </mat-expansion-panel>
   </mat-accordion>
 </div>
+
+<div class="limited-offer">
+  <h1 class="five-groups-title title">
+    {{
+      "Только пять групп обучения для новичков на условиях 40% комиссии с первой сделки!"
+    }}
+  </h1>
+  <div class="five-groups-block">
+    <div class="studying-date danger-tile tile">29 июня</div>
+    <div class="studying-date danger-tile tile">15 июля</div>
+    <div class="studying-date danger-tile tile">15 августа</div>
+    <div class="studying-date danger-tile tile">27 августа</div>
+    <div class="studying-date danger-tile tile">9 сентября</div>
+  </div>
+</div>
+<app-timer></app-timer>
+<app-reg-form></app-reg-form>
