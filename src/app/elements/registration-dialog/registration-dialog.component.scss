@@ -1,6 +1,8 @@
 @import "../../../styles.scss";
 * {
   max-width: 700px;
+  max-height: 80vh;
+  overflow: scroll;
 }
 .title {
   display: none;
