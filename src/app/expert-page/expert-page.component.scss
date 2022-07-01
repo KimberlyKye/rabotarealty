@@ -19,6 +19,9 @@
   text-align: center;
 }
 @media screen and (min-width: 768px) {
+  .mobile-title {
+    display: none;
+  }
   .expert-block {
     grid-template-columns: 1fr 1fr;
     margin: 30px 2vw 30px 2vw;

@@ -23,6 +23,9 @@
   list-style: url("../../assets/knowledge.png");
 }
 @media screen and (min-width: 768px) {
+  .mobile-title {
+    display: none;
+  }
   .accordion {
     display: none;
   }
