@@ -2,8 +2,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 100%;
-  padding: 10px;
+  width: 98vw;
+  padding: 1vw;
   background: linear-gradient(210deg, #baa4f1, #673ab7, #baa4f1);
 }
 
@@ -33,10 +33,6 @@
 }
 
 @media screen and (max-width: 767px) {
-  .timer {
-    padding: 15px 0 15px 0;
-  }
-
   .date-row {
     display: flex;
     align-items: center;
