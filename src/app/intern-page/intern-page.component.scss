@@ -10,7 +10,10 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+.black-bg {
+  width: 100%;
+  min-height: 20vh;
+}
 .expectation-pic {
   width: 100%;
   padding: 0;
@@ -48,6 +51,14 @@
   }
 }
 @media screen and (max-width: 767px) {
+  .parallax-image {
+    display: none;
+  }
+  .page-title {
+    background: url("../../assets/intern-bg.jpg");
+    background-position: bottom;
+    background-size: cover;
+  }
   .four-cards {
     display: none;
   }

@@ -11,6 +11,11 @@
   background-size: cover;
 }
 
+.black-bg {
+  width: 100%;
+  min-height: 20vh;
+}
+
 .information {
   display: grid;
 }
@@ -37,6 +42,14 @@
   }
 }
 @media screen and (max-width: 767px) {
+  .parallax-image {
+    display: none;
+  }
+  .page-title {
+    background: url("../../assets/manager-bg.jpeg");
+    background-position: bottom;
+    background-size: cover;
+  }
   .information {
     grid-template-rows: 1fr 1fr;
     grid-gap: 30px;

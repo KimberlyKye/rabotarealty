@@ -7,6 +7,10 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.black-bg {
+  width: 100%;
+  min-height: 20vh;
+}
 .expert-block {
   display: grid;
 }
@@ -42,6 +46,14 @@
 }
 
 @media screen and (max-width: 767px) {
+  .parallax-image {
+    display: none;
+  }
+  .page-title {
+    background: url("../../assets/expert-bg-.jpeg");
+    background-position: bottom;
+    background-size: cover;
+  }
   .expert-block {
     grid-template-rows: 1fr 1fr;
   }
