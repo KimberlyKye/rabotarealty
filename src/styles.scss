@@ -63,9 +63,11 @@ a {
 .header-page-text {
   color: #fff;
 }
-
+.large {
+  font-size: xx-large;
+}
 .limited-offer {
-  margin: 30px 5vw 0 5vw;
+  margin: 40px 5vw 30px 5vw;
 }
 .five-groups-title {
   font-weight: 900;
@@ -107,6 +109,10 @@ a {
   }
 }
 @media screen and (min-width: 768px) {
+  .parallax-image,
+  .black-bg {
+    min-height: 20vh;
+  }
   .toolbar-row {
     display: flex;
     align-items: center;
@@ -124,11 +130,7 @@ a {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 979px) {
-  .parallax-image,
-  .black-bg {
-    min-height: 20vh;
-  }
-  .scroll-text {
+  .header-page-text {
     font: 400 5vh/5vh Roboto, "Helvetica Neue", sans-serif;
   }
 }

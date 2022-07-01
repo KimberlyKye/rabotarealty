@@ -89,28 +89,28 @@ export class InternPageComponent {
         'Методы презентаций',
         'Психологию продаж',
       ],
-      img: 'https://www.karavantver.ru/wp-content/uploads/2021/08/istock-491373804.jpg',
+      img: '../../assets/21hours.jpg',
     },
     {
       title: 'Две недели интенсивной практики с персональным наставником',
       text: [
         'Опытные наставники будут сопровождать вас плечом к плечу к вашему успеху и поделятся своими накопленными опытом и знаниями!',
       ],
-      img: 'https://businessman.ru/static/img/n/5/0/7/7/0/6/i/507706.jpg',
+      img: '../../assets/teacher.jpeg',
     },
     {
       title: 'Активные тренинги в команде',
       text: [
         'Тренинги по обработке скриптов и различные семинары помогут быстро влиться в рабочий процесс и выйти на сделку уже в течение первого месяца работы!',
       ],
-      img: 'https://kremenki-gorod.ru/wp-content/uploads/b/8/6/b8655b82cfb003aeb93315dc7578a1ce.jpeg',
+      img: '../../assets/team.jpeg',
     },
     {
       title: 'Активные упражнения на скриптах-тренажёрах',
       text: [
         'Вы получите неограниченные возможности для совершенствования Ваших навыков и знаний, обучаясь у лучших и решая свои сверхамбициозные задачи!',
       ],
-      img: 'https://coachuniver.ru/wp-content/uploads/2021/03/fotolia124971722subscriptionmonthlyxxlreferencefd92a.jpg',
+      img: '../../assets/scripts(2).png',
     },
   ];
 }
