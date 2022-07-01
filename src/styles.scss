@@ -56,6 +56,8 @@ a {
 
 .black-bg {
   background: rgba(0, 0, 0, 0.356);
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -83,7 +85,6 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 14vw;
   text-align: center;
   border-color: #00000024;
   box-shadow: 0 3px 5px -1px #673ab724, 0 6px 10px #673ab724,
@@ -109,8 +110,7 @@ a {
   }
 }
 @media screen and (min-width: 768px) {
-  .parallax-image,
-  .black-bg {
+  .parallax-image {
     min-height: 20vh;
   }
   .toolbar-row {
@@ -124,6 +124,7 @@ a {
   }
   .studying-date {
     font: 400 24px/32px Roboto, "Helvetica Neue", sans-serif;
+    height: 14vw;
   }
   .page-title {
     display: none;
@@ -146,5 +147,6 @@ a {
   }
   .studying-date {
     font-size: small;
+    height: 16.4vw;
   }
 }
