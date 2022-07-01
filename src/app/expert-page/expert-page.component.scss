@@ -11,18 +11,18 @@
   width: 100%;
   min-height: 20vh;
 }
-.expert-block {
-  display: grid;
-}
+
 .director-quote {
   background: #cccccc24;
   text-align: center;
 }
-@media screen and (min-width: 768px) {
-  .mobile-title {
-    display: none;
-  }
+.hugs-image {
+  width: 100%;
+}
+@media screen and (min-width: 990px) {
   .expert-block {
+    display: grid;
+
     grid-template-columns: 1fr 1fr;
     margin: 30px 2vw 30px 2vw;
   }
@@ -47,18 +47,21 @@
     }
   }
 }
-
-@media screen and (max-width: 767px) {
-  .parallax-image {
+@media screen and (min-width: 768px) {
+  .mobile-title {
     display: none;
   }
-  .page-title {
-    background: url("../../assets/expert-bg-.jpeg");
-    background-position: bottom;
-    background-size: cover;
+}
+@media screen and (max-width: 989px) {
+  .img-container img {
+    width: 50%;
   }
   .expert-block {
-    grid-template-rows: 1fr 1fr;
+    margin: 30px 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
   .greeting {
     display: flex;
@@ -71,5 +74,15 @@
       max-width: 500px;
       width: 100%;
     }
+  }
+}
+@media screen and (max-width: 767px) {
+  .parallax-image {
+    display: none;
+  }
+  .page-title {
+    background: url("../../assets/expert-bg-.jpeg");
+    background-position: bottom;
+    background-size: cover;
   }
 }
