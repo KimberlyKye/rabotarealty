@@ -1,11 +1,6 @@
 @import "../../styles.scss";
 
 .parallax-image {
-  background: url("../../assets/main-bg.jpeg");
-  background-attachment: fixed;
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
   height: 548px;
 }
 .black-bg {
@@ -117,6 +112,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    text-align: center;
   }
 }
 
@@ -161,8 +157,14 @@
     border: 3px solid #00000024 !important;
   }
 }
-
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 990px) {
+  .parallax-image {
+    background: url("../../assets/main-bg.jpeg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
   .intro-into-realty {
     grid-template-columns: 2fr 1fr;
   }
@@ -249,7 +251,82 @@
     background-size: cover;
   }
 }
-@media screen and (max-width: 767px) {
+
+@media screen and (min-width: 768px) and (max-width: 989px) {
+  .cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 30px;
+  }
+
+  .card {
+    width: 25%;
+    height: 25em;
+    perspective: 150em;
+
+    &__side {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 20em;
+      min-height: fit-content;
+
+      backface-visibility: hidden;
+      transition: all 0.6s ease;
+      box-shadow: 1em 1em 2em rgba(0, 0, 0, 0.2);
+
+      &--front {
+        background-color: #fff;
+      }
+
+      &--back {
+        color: #fff;
+        transform: rotateY(180deg);
+
+        &-1 {
+          background-image: linear-gradient(
+            to right bottom,
+            $color-primary-light,
+            $color-primary-dark
+          );
+        }
+
+        &-2 {
+          background-image: linear-gradient(
+            to right bottom,
+            $color-tertiary-light,
+            $color-tertiary-dark
+          );
+        }
+
+        &-3 {
+          background-image: linear-gradient(
+            to right bottom,
+            $color-secondary-light,
+            $color-secondary-dark
+          );
+        }
+      }
+    }
+
+    &:hover &__side--front {
+      transform: rotateY(-180deg);
+    }
+
+    &:hover &__side--back {
+      transform: rotate(0);
+    }
+
+    &__description {
+      font-size: xx-small;
+      padding: 6px;
+    }
+  }
+}
+
+@media screen and (max-width: 989px) {
   .gift {
     display: none;
   }
@@ -271,6 +348,8 @@
   .text-container {
     text-align: center;
   }
+}
+@media screen and (max-width: 767px) {
   .cards {
     flex-direction: column;
   }
