@@ -1,1 +1,37 @@
 @import "../../styles.scss";
+
+h3 {
+  text-align: center;
+  margin: 0;
+}
+.map,
+.phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 47vw;
+}
+
+@media screen and (min-width: 768px) {
+  .about {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 30px 2vw 30px 2vw;
+  }
+  .img-about {
+    width: 40%;
+    img {
+      width: 100%;
+    }
+  }
+  .adresses {
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2vw;
+    margin: 30px 2vw 30px 2vw;
+  }
+}
+@media screen and (max-width: 767px) {
+}
