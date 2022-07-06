@@ -19,7 +19,7 @@ export class TimerComponent {
   secondsText = '';
 
   interval = setInterval(() => {
-    let startDate = new Date('Jul 15, 2022 9:00:00').getTime();
+    let startDate = new Date('Jul 11, 2022 9:00:00').getTime();
     let today = new Date().getTime();
     let difference = startDate - today;
 

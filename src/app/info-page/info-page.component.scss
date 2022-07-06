@@ -4,23 +4,26 @@ h3 {
   text-align: center;
   margin: 0;
 }
-.map,
+.about,
+.adresses {
+  margin: 30px 2vw;
+}
 .phone {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+.adresses {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
 
 @media screen and (min-width: 768px) {
-  .mobile-map {
-    display: none;
-  }
-
   .about {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin: 30px 2vw 30px 2vw;
   }
   .img-about {
     width: 40%;
@@ -28,28 +31,19 @@ h3 {
       width: 100%;
     }
   }
-  .map,
   .phone {
     max-width: 47vw;
   }
-  .adresses {
-    display: grid;
-    grid-template-rows: 1fr 4fr;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 2vw;
-    margin: 30px 2vw 30px 2vw;
+  .mobile-map {
+    display: none;
   }
 }
 @media screen and (max-width: 767px) {
-  .map {
-    display: none;
-  }
   .about {
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
-    margin: 30px 2vw 30px 2vw;
   }
   .img-about {
     width: 100%;
@@ -58,10 +52,10 @@ h3 {
     }
   }
   .adresses {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     flex-direction: column;
-    margin: 30px 2vw 30px 2vw;
+  }
+
+  .map {
+    display: none;
   }
 }

@@ -23,21 +23,22 @@
   }
 }
 .hugs-image {
-  width: 100%;
+  width: 80%;
+  border-radius: 50%;
 }
 @media screen and (min-width: 990px) {
   .expert-block {
     display: grid;
 
     grid-template-columns: 1fr 1fr;
-    margin: 30px 2vw 30px 2vw;
+    margin: 30px 2vw;
   }
   .greeting {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 30px;
+    padding: 0 30px;
 
     .text-container,
     .img-container {
@@ -47,9 +48,13 @@
       flex-direction: column;
       max-width: 60vw;
       margin-bottom: 30px;
+      width: 100%;
     }
     .text-container > p {
       font: 400 2.5vh/2.5vh Roboto, "Helvetica Neue", sans-serif;
+    }
+    .img-container img {
+      width: 30%;
     }
   }
 }
