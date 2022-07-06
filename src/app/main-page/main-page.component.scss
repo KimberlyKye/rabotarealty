@@ -13,7 +13,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 30px 100px 30px 100px;
+  padding: 30px 100px;
   background: #cccccc24;
   text-align: center;
 
@@ -344,14 +344,33 @@
   .video-block {
     display: flex;
     align-items: center;
+    margin: 10px 4vw;
+  }
+  .intro-into-realty {
     flex-direction: column;
-    margin: 10px;
+  }
+  .video-block {
+    flex-direction: column-reverse;
   }
   .text-container {
-    text-align: center;
+    text-align: justify;
+    margin-top: 10px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .mobile-content {
+    display: none;
   }
 }
 @media screen and (max-width: 767px) {
+  .main-text {
+    width: 96vw;
+    padding: 2vw;
+  }
+  .desktop-content {
+    display: none;
+  }
+
   .cards {
     flex-direction: column;
   }
