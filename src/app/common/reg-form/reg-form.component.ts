@@ -19,8 +19,8 @@ export class RegFormComponent {
   matcher = new MyErrorStateMatcher();
 
   dateList: string[] = [
-    '29.06.2022',
-    '15.07.2022',
+    '11.07.2022',
+    '31.07.2022',
     '15.08.2022',
     '27.08.2022',
     '09.09.2022',
@@ -52,10 +52,10 @@ export class RegFormComponent {
   private sendEmail() {
     emailjs
       .send(
-        'service_5ixiurq',
-        'template_2d6ilet',
+        'service_zfj1b87',
+        'template_6t3kmhf',
         this.registrationForm.value,
-        '36V6kFd_Htz44F-9A'
+        'BwuA5Ne8fvf-5KXBz'
       )
       .then(
         (result: EmailJSResponseStatus) => {
