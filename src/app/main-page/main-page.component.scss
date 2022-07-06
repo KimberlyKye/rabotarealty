@@ -387,5 +387,8 @@
       height: 20em;
       min-height: fit-content;
     }
+    &__description {
+      font-size: smaller;
+    }
   }
 }
