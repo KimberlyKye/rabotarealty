@@ -27,6 +27,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { TimerComponent } from './elements/timer/timer.component';
 import { MatIconModule } from '@angular/material/icon';
+import { PrivacyComponent } from './privacy/privacy.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,6 +38,7 @@ import { MatIconModule } from '@angular/material/icon';
     MainPageComponent,
     DialogComponent,
     TimerComponent,
+    PrivacyComponent,
   ],
   imports: [
     BrowserModule,
