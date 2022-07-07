@@ -1,18 +1,37 @@
-.privacy {
-  margin: 30px 5vw;
-}
-
 .block {
   border: solid 2px #eee;
-  padding: 20px;
-  width: 100%;
-}
-
-.privacy-block {
-  margin-bottom: 24px;
-  width: 100%;
 }
 
 ul {
   list-style: none;
+}
+
+@media screen and (min-width: 768px) {
+  .privacy {
+    margin: 30px 5vw;
+  }
+
+  .block {
+    padding: 20px;
+    width: 100%;
+  }
+
+  .privacy-block {
+    margin-bottom: 24px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .privacy {
+    margin: 30px 1vw;
+  }
+  .block {
+    padding: 5px;
+  }
+  .privacy-block {
+    margin-bottom: 10px;
+  }
+  ul {
+    padding: 0;
+  }
 }

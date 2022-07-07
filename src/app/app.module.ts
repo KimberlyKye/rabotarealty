@@ -7,6 +7,7 @@ import { InternPageComponent } from './intern-page/intern-page.component';
 import { ExpertPageComponent } from './expert-page/expert-page.component';
 import { ManagerPageComponent } from './manager-page/manager-page.component';
 import { InfoPageComponent } from './info-page/info-page.component';
+import { PrivacyComponent } from './privacy/privacy.component';
 import { HeaderModule } from './header/header.module';
 import { FooterModule } from './footer/footer.module';
 import { MainPageComponent } from './main-page/main-page.component';
@@ -27,7 +28,8 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { TimerComponent } from './elements/timer/timer.component';
 import { MatIconModule } from '@angular/material/icon';
-import { PrivacyComponent } from './privacy/privacy.component';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -60,6 +62,7 @@ import { PrivacyComponent } from './privacy/privacy.component';
     MatCheckboxModule,
     MatMenuModule,
     MatIconModule,
+    MatSnackBarModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
